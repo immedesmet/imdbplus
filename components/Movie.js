@@ -54,9 +54,16 @@ const Movie = ({ data, level }) => {
     var genres = data.rels.filter(obj => {
       return content.genres.includes(obj.uuid);
     })
-    var ageratings = data.rels.filter(obj => {
+    if(content.agerating){
+      var ageratings = data.rels.filter(obj => {
       return content.agerating.includes(obj.uuid);
     })
+    }
+    if(content.agerating){
+      var agerating = data.rels.filter(obj => {
+        return content.agerating.includes(obj.uuid);
+      });
+   }
   } else {
     var content = data;
   }
@@ -90,14 +97,15 @@ const Movie = ({ data, level }) => {
                 {item.content.title}
               </div>
             ))}
-            </div>
-            <div className={styles.genrelist}>
-              {ageratings.map((item, index) => (
-              <div className={styles.genre}>
+          </div>
+          {agerating && <div className={styles.ageratinglist}>
+            {agerating.map((item, index) => (
+              <a href={`/${item.full_slug}`}><div className={styles.agerating}>
                 {item.content.title}
-              </div>
+              </div></a>
             ))}
-            </div>
+          </div>
+          } 
           <div className={styles.mainpicture} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}>
           </div>
           <div className={styles.imagegallery}>
