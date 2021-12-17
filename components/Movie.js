@@ -92,12 +92,12 @@ const Movie = ({ data, level }) => {
             ))}
             </div>
             <div className={styles.genrelist}>
-            {ageratings.map((item, index) => (
+              {ageratings.map((item, index) => (
               <div className={styles.genre}>
                 {item.content.title}
               </div>
             ))}
-          </div>
+            </div>
           <div className={styles.mainpicture} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}>
           </div>
           <div className={styles.imagegallery}>
