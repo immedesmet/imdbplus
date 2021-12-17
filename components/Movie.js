@@ -54,6 +54,9 @@ const Movie = ({ data, level }) => {
     var genres = data.rels.filter(obj => {
       return content.genres.includes(obj.uuid);
     })
+    var ageratings = data.rels.filter(obj => {
+      return content.ageratings.includes(obj.uuid);
+    });
   } else {
     var content = data;
   }
@@ -83,6 +86,12 @@ const Movie = ({ data, level }) => {
           </h1>
           <div className={styles.genrelist}>
             {genres.map((item, index) => (
+              <div className={styles.genre}>
+                {item.content.title}
+              </div>
+            ))}
+             <div className={styles.genrelist}>
+            {ageratings.map((item, index) => (
               <div className={styles.genre}>
                 {item.content.title}
               </div>
