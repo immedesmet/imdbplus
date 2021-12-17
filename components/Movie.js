@@ -54,7 +54,6 @@ const Movie = ({ data, level }) => {
     var genres = data.rels.filter(obj => {
       return content.genres.includes(obj.uuid);
     })
-
   } else {
     var content = data;
   }
@@ -89,7 +88,6 @@ const Movie = ({ data, level }) => {
               </div>
             ))}
           </div>
-         
           <div className={styles.mainpicture} style={{ backgroundImage: url("${content.mainpicture.filename}") }}>
           </div>
           <div className={styles.imagegallery}>

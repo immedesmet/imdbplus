@@ -53,7 +53,7 @@ const Components = {
   'twocol':TwoCol,
   'title':Title,
   'topmovies':TopMovies,
-  'agerating':AgeRating
+  'Age-rating':AgeRating
 }
 
 
