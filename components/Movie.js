@@ -98,14 +98,14 @@ const Movie = ({ data, level }) => {
               </div>
             ))}
           </div>
-          {agerating && <div className={styles.ageratinglist}>
-            {agerating.map((item, index) => (
-              <a href={`/${item.full_slug}`}><div className={styles.agerating}>
+          <div className={styles.ageratinglist}>
+            {ageratings.map((item, index) => (
+              <div className={styles.agerating}>
                 {item.content.title}
-              </div></a>
+              </div>
             ))}
           </div>
-          } 
+           
           <div className={styles.mainpicture} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}>
           </div>
           <div className={styles.imagegallery}>
