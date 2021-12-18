@@ -27,18 +27,19 @@
     }
   }
 
-  .agertinglist {
+  .ageratinglist {
     display: flex;
     margin-bottom: 40px;
 
     .agerating {
       padding: 5px 20px;
-      background-color: #f0f0f0;
+      background-color: $color-background-tag;
       max-width: 100px;
       margin-right: 10px;
       font-weight: 700;
     }
   }
+
 
   .peoplesegment {
     margin-top:40px;
