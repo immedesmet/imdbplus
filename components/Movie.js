@@ -40,7 +40,7 @@ import React, { useState } from "react"
 	
 
 	const Movie = ({ data, level }) => {
-	  var locale = 'en';
+	  var locale = data.story.lang;
 	  //enriching data
 	  if (level === 'data') {
 	    locale = data.story.lang;
@@ -111,6 +111,7 @@ import React, { useState } from "react"
               </div></a>
             ))}
           </div>
+
           }
 	          <div className={styles.mainpicture} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}>
 	          </div>
