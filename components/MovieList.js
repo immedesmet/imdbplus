@@ -30,7 +30,7 @@ const MovieList = ({ data, level, locale }) => {
 
   return (
     <div className={styles.list}>
-      <div className={styles.orderbypicker}>
+      {/* <div className={styles.orderbypicker}>
         <div className={styles.orderbytitle}>
           Order by
         </div>
@@ -42,7 +42,7 @@ const MovieList = ({ data, level, locale }) => {
             Title
           </div>
         </div>
-      </div>
+      </div>  */}
       <div>
         {items && items.length > 0 && <SmallCardList items={items} type="movie"></SmallCardList>}
       </div>
