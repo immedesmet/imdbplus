@@ -31,11 +31,11 @@ const Navigation = ({ locale, locales }) => {
         <div className={styles.navlogo}>
           <a href={homeurl}>
             {/* <img
-              src="wanderlust.jpg"
+              src="Wanderlust.jpg"
               alt="IMDBPlus Logo"
               className=""
             /> */}
-            <Image src="/wanderlust.jpg" alt="IMDBPlus Logo" width="180" height="40" />
+            <Image src="/Wanderlust.jpg" alt="IMDBPlus Logo" width="180" height="40" />
           </a>
         </div>
         <div className={styles.navlinkswrapper}>
