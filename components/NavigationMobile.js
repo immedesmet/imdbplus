@@ -37,6 +37,7 @@ const NavigationMobile = ({ locale, locales }) => {
               src="/Wanderlust.jpg"
               alt="Wanderlust Logo"
               className=""
+              width="250" height="40"
             />
           </a>
         </div>
