@@ -3,12 +3,12 @@ import Image from "next/image"
 
 const Navigation = ({ locale, locales }) => {
   const resolveMovies = {
-    en: 'Movies',
-    nl: 'Films',
+    en: 'Continents',
+    nl: 'Continenten',
   }
   const resolvePeople = {
-    en: 'People',
-    nl: 'Mensen',
+    en: 'Countries',
+    nl: 'Landen',
   }
   const resolveNews = {
     en: 'News',
@@ -31,11 +31,11 @@ const Navigation = ({ locale, locales }) => {
         <div className={styles.navlogo}>
           <a href={homeurl}>
             {/* <img
-              src="https://a.storyblok.com/f/133261/3039x582/a60d166ec2/logo-colored-full.png/m/200x0"
+              src="wanderlust.jpg"
               alt="IMDBPlus Logo"
               className=""
             /> */}
-            <Image src="/logo-colored-full.png" alt="IMDBPlus Logo" width="128" height="25" />
+            <Image src="/wanderlust.jpg" alt="IMDBPlus Logo" width="180" height="40" />
           </a>
         </div>
         <div className={styles.navlinkswrapper}>

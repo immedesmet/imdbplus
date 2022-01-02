@@ -4,12 +4,12 @@ import React, { useState } from "react"
 const NavigationMobile = ({ locale, locales }) => {
 
   const resolveMovies = {
-    en: 'Movies',
-    nl: 'Films',
+    en: 'Continents',
+    nl: 'Continenten',
   }
   const resolvePeople = {
-    en: 'People',
-    nl: 'Mensen',
+    en: 'Countries',
+    nl: 'Landen',
   }
   const resolveNews = {
     en: 'News',
