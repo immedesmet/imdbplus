@@ -34,7 +34,7 @@ const NavigationMobile = ({ locale, locales }) => {
         <div className={styles.navlogo}>
           <a href="/">
             <img
-              src="Wanderlust.jpg"
+              src="/Wanderlust.jpg"
               alt="Wanderlust Logo"
               className=""
             />
