@@ -32,7 +32,7 @@ const Navigation = ({ locale, locales }) => {
           <a href={homeurl}>
             {/* <img
               src="Wanderlust.jpg"
-              alt="IMDBPlus Logo"
+              alt="Wanderlust Logo"
               className=""
             /> */}
             <Image src="/Wanderlust.jpg" alt="IMDBPlus Logo" width="180" height="40" />

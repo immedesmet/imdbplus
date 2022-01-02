@@ -10,7 +10,7 @@ const Layout = ({ children, locale, locales, data }) => {
 
   const router = useRouter();
 
-  let title = "IMDBPlus";
+  let title = "Wanderlust";
   let description = "description for page";
   let sitename="IMDB Plus";
   let url = router.basePath;
