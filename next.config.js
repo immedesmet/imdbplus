@@ -2,7 +2,7 @@ module.exports = {
     // productionBrowserSourceMaps: true,
     i18n: {
         localeDetection: false,
-        locales: [''], 
+        locales: ['en'], 
         defaultLocale: 'en',
     }
 }
